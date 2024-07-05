@@ -1,4 +1,4 @@
 # iurii
 https://iurii.io
 
-Developer Portfolio
+Iurii Chmykhun's Developer Portfolio

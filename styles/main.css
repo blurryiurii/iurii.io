@@ -53,7 +53,7 @@ main h1::first-letter {
 }
 
 /* Projects page */
-h1 {
+.title {
   margin: 3vh 3vw;
 }
 .skill {
