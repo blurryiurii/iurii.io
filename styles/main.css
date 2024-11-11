@@ -309,6 +309,17 @@ main {
   color: var(--text-secondary);
 }
 
+.project-details ul li a {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+.project-details ul li a:hover {
+  color: var(--text-hover);
+}
+
 .github-link {
   display: inline-flex;
   align-items: center;
@@ -542,6 +553,17 @@ body.dark-mode .project-details h3 {
 
 body.dark-mode .project-details ul {
   color: var(--text-secondary-dark);
+}
+
+body.dark-mode .project-details ul li a {
+  color: var(--text-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+body.dark-mode .project-details ul li a:hover {
+  color: var(--link-hover-dark);
 }
 
 body.dark-mode footer {
