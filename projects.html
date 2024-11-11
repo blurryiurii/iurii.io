@@ -72,7 +72,7 @@
             <div class="project">
                 <img src="images/htmlcssjs.png" alt="Project photo">
                 <h2>iurii.io</h1>
-                    <h2>2024</h2>
+                    <h2>July 2024 - Present</h2>
                 <p>Inception... My personal Developer Portfolio website showcasing projects and experience.</p>
                 <button onclick="openProjectOverlay('iurii-io')">Read More</button>
             </div>
@@ -108,9 +108,48 @@
                 </div>
             </div>
             <div class="project">
+                <img src="images/dsucc.svg" alt="Chess Engine Project photo">
+                <h2>Capture The Flag</h1>
+                    <h2>August 2024 - October 2024</h2>
+                    <p>A collection of puzzles to practice a wide range of cybersecurity skills.</p>
+                    <button onclick="openProjectOverlay('ctf')">Read More</button>
+            </div>
+            <div id="ctf" class="project-overlay">
+                <div class="overlay-content">
+                    <button class="close-overlay" onclick="closeProjectOverlay('ctf')">&times;</button>
+                    <h2>CTF Club</h2>
+                    <div class="project-details">
+                        <section>
+                            <h3>Project Overview</h3>
+                            <p>A collection of my cybersecurity challenges for DSU's CTF Club</p>
+                        </section>
+                        <section>
+                            <h3>Impetus</h3>
+                            <p>Besides weekly presentations, I wanted to create challenges relevant to our meeting
+                                topics, for our participants to solve and practice our topics hands-on. </p>
+                        </section>
+                        <section>
+                            <h3>Skills & Technologies</h3>
+                            <ul>
+                                <li>Challenges include forensics, cryptography, <a href="https://en.wikipedia.org/wiki/Open-source_intelligence">OSINT</a>,
+                                and Pwn categories</li>
+                                <li>Hosted server-based challenges using <a href="https://cloud.google.com/">Google Cloud Platform</a>
+                                     and <a href="https://www.docker.com/">Docker</a></li>
+                                <li>Used & managed the <a href="https://github.com/CTFd/CTFd">CTFd</a> platform to host challenges.</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Link</h3>
+                            <a href="https://ctf.defsec.club/challenges" class="github-link" target="_blank">
+                                See My Challenges on our CTFd Platform</a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
                 <img src="images/sorting.png" alt="Project photo">
                 <h2>Sort Visualizer</h1>
-                    <h2>2024</h2>
+                <h2>July 2024</h2>
                 <p>Ever wondered how Bubble Sort works? See it in action step-by-step!</p>
                 <button onclick="openProjectOverlay('sort-visual')">Read More</button>
             </div>
@@ -141,39 +180,6 @@
                             <a href="https://github.com/blurryiurii/sort-visual" class="github-link" target="_blank">
                                 View on GitHub <i class="fa fa-github"></i>
                             </a>
-                        </section>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <img src="images/knight.svg" alt="Chess Engine Project photo">
-                <h2>Chess Engine</h1>
-                    <h2>2024</h2>
-                    <p>The classical Chess game including a chess engine that implements various evaluation
-                        and optimization algorithms.</p>
-                    <button onclick="openProjectOverlay('chess-engine')">Read More</button>
-            </div>
-            <div id="chess-engine" class="project-overlay">
-                <div class="overlay-content">
-                    <button class="close-overlay" onclick="closeProjectOverlay('chess-engine')">&times;</button>
-                    <h2>Chess Engine</h2>
-                    <div class="project-details">
-                        <section>
-                            <h3>Project Overview</h3>
-                            <p>A chess game with an optimized minimax evaluation engine.</p>
-                        </section>
-                        <section>
-                            <h3>Impetus</h3>
-                            <p>As one of my beginning projects, I learned with the help of tutorials how
-                                to implement an object-oriented style engine that plays against you!</p>
-                        </section>
-                        <section>
-                            <h3>Skills & Technologies</h3>
-                            <ul>
-                                <li>Implemented Negamax, a special case of Minimax</li>
-                                <li>Optimized evaluation using alpha-beta pruning and move ordering heuristics</li>
-                                <li>GUI interface using PyGame</li>
-                            </ul>
                         </section>
                     </div>
                 </div>
