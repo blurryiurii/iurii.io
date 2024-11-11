@@ -2,83 +2,193 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Developer Projects">
+    <meta name="description" content="Iurii Chmykhun's Developer Portfolio">
     <meta name="keywords" content="Iurii, Chmykhun, Iurii Chmykhun">
     <meta name="author" content="Iurii Chmykhun">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-mini.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="scripts/script.js"></script>
     <title>Iurii Chmykhun | Projects</title>
 </head>
 <body>
-<header>
-    <h1>Iurii Chmykhun</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html" class="current">Projects</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <h1 class="title">Projects</h1>
-    <div class="skill">
-        <h2>Temporify, a Discord Music Bot</h2>
-        <p>A companion to your discord servers; Temporify plays songs or podcasts in your voice channels
-            during gaming sessions or background music during meetings using audio streaming from YouTube videos.</p>
-        <p>Why "Temporify"? It's a play off of our brain's <strong>tempor</strong>al lobe responsible for our hearing senses,
-            and Spot<strong>ify</strong>.
-        </p>
-        <h3>Skills Learned</h3>
-        <ul>
-            <li><strong>Discord API</strong> based server</li>
-            <li>Python's asynchronous library, <strong>asyncio</strong></li>
-            <li>Designing a chat-based interface</li>
-            <li class="skill-x">Rickrolling office meetings</li>
-        </ul>
-    </div>
-    <div class="skill">
-        <h2>Python Chess Engine</h2>
-        <p>A simple chess engine against an easy-to-beat computer.</p>
-        <h3>Skills Learned</h3>
-        <ul>
-            <li>Game interface with Python's <strong>PyGame</strong></li>
-            <li>Implementing Negamax for computer moves, a subset of the MinMax algorithm</li>
-            <li>Engine speed optimizations using Alpha-Beta pruning, move-ordering, and threading</li>
-            <li class="skill-x">Checkmating Stockfish 16 itself</li>
-        </ul>
-    </div>
-    <div class="skill">
-        <h2>Instagram Quotes</h2>
-        <p>A bot that uploads daily picks of user quote submissions with a random image as
-            the background.</p>
-        <h3>Skills Learned</h3>
-        <ul>
-            <li>Interacting with Instagram, <strong>instagrapi</strong></li>
-            <li>Scheduling daily posts, <strong>asyncio</strong></li>
-            <li>Implementing terminal-based admin controls</li>
-            <li class="skill-x">Uploading memes</li>
-        </ul>
-    </div>
-    <div class="skill">
-        <h2>Sort Visualizer</h2>
-        <p>Ever wondered how Bubble Sorting algorithm works? Look at the visual <a href="https://sort.iurii.io">here</a>!</p>
-        <h3>Skills Learned</h3>
-        <ul>
-            <li>HTML/CSS/JS</li>
-            <li>Interactive client-side interface</li>
-        </ul>
-    </div>
-</main>
-<footer>
-    <h1>Iurii Chmykhun 2024</h1>
-    <nav>
-        <ul>
-            <li><a class="fa fa-instagram" href="https://www.instagram.com/blurryiurii/"></a></li>
-            <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/iurii-chmykhun-a99801316"></a></li>
-            <li><a class="fa fa-github" href="https://github.com/ipy2217"></a></li>
-        </ul>
-    </nav>
-</footer>
+    <header>
+        <h1>Iurii Chmykhun</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html" class="current">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="brief">
+            <h1>Projects Portfolio</h1>
+            <p>I have a broad collection of experiences, including creating websites, building &
+                hosting cybersecurity puzzles, writing software, and solving programming challenges.</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project">
+                <img src="images/prime-grid.png" alt="Prime Grid Project Photo">
+                <h2>Prime Grid Labeling</h2>
+                <h2>October 2024</h2>
+                <p>Generation of an NxM matrix such that all orthogonal neighboars are coprime.</p>
+                <button onclick="openProjectOverlay('prime-grid')">Read More</button>
+            </div>
+            <div id="prime-grid" class="project-overlay">
+                <div class="overlay-content">
+                    <button class="close-overlay" onclick="closeProjectOverlay('prime-grid')">&times;</button>
+                    <h2>Prime Grid Labeling</h2>
+                    <div class="project-details">
+                        <section>
+                            <h3>Project Overview</h3>
+                            <p>Generation of an <code>N x M</code> matrix with values <code>1...N*M</code> such that all
+                                orthogonal neighbors are coprime.</p>
+                        </section>
+                        <section>
+                            <h3>Impetus</h3>
+                            <p>My goal as a lead contributor to the project was to implement the latest version with heuristic
+                                optimization and an iterative stack to speed up the generation of prime grids, accomplishing
+                                a 115x115 grid.</p>
+                        </section>
+                        <section>
+                            <h3>Skills & Technologies</h3>
+                            <ul>
+                                <li>Recursive & iterative stack-based backtracking</li>
+                                <li>Collaborated using Github for version control</li>
+                                <li>Used <code>Node</code> and <code>Graph</code> classes for object-oriented generations</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Links</h3>
+                            <a href="https://github.com/GanschowJosh/PrimeGridLabeling" class="github-link" target="_blank">
+                                View on GitHub <i class="fa fa-github"></i>
+                            </a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/htmlcssjs.png" alt="Project photo">
+                <h2>iurii.io</h1>
+                    <h2>2024</h2>
+                <p>Inception... My personal Developer Portfolio website showcasing projects and experience.</p>
+                <button onclick="openProjectOverlay('iurii-io')">Read More</button>
+            </div>
+            <div id="iurii-io" class="project-overlay">
+                <div class="overlay-content">
+                    <button class="close-overlay" onclick="closeProjectOverlay('iurii-io')">&times;</button>
+                    <h2>iurii.io</h2>
+                    <div class="project-details">
+                        <section>
+                            <h3>Project Overview</h3>
+                            <p>My personal website!</p>
+                        </section>
+                        <section>
+                            <h3>Impetus</h3>
+                            <p>My motivation was to build an portfolio of my personal and professional development
+                                through interactive methods.</p>
+                        </section>
+                        <section>
+                            <h3>Skills & Technologies</h3>
+                            <ul>
+                                <li>Written in HTML, JavaScript, and no-framework CSS</li>
+                                <li>Hosted through Cloudflare Pages</li>
+                                <li>SSL enabled, as well as automatic deployments from the GitHub repository below</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Links</h3>
+                            <a href="https://github.com/blurryiurii/iurii" class="github-link" target="_blank">
+                                View on GitHub <i class="fa fa-github"></i>
+                            </a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/sorting.png" alt="Project photo">
+                <h2>Sort Visualizer</h1>
+                    <h2>2024</h2>
+                <p>Ever wondered how Bubble Sort works? See it in action step-by-step!</p>
+                <button onclick="openProjectOverlay('sort-visual')">Read More</button>
+            </div>
+            <div id="sort-visual" class="project-overlay">
+                <div class="overlay-content">
+                    <button class="close-overlay" onclick="closeProjectOverlay('sort-visual')">&times;</button>
+                    <h2>Sort Visualizer</h2>
+                    <div class="project-details">
+                        <section>
+                            <h3>Project Overview</h3>
+                            <p>A visualizer of a sorting algorithm, showing each step, or replaying the
+                                steps in near-realtime!</p>
+                        </section>
+                        <section>
+                            <h3>Motivation</h3>
+                            <p>Sorting algorithms on YouTube motivated me to create an interactive web version of
+                                the classical Bubble Sort.</p>
+                        </section>
+                        <section>
+                            <h3>Skills & Technologies</h3>
+                            <ul>
+                                <li>Written in plain HTML/CSS/JS</li>
+                                <li>Visualized the Bubble Sort step-by-step with adjustable sorting speed</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3>Links</h3>
+                            <a href="https://github.com/blurryiurii/sort-visual" class="github-link" target="_blank">
+                                View on GitHub <i class="fa fa-github"></i>
+                            </a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/knight.svg" alt="Chess Engine Project photo">
+                <h2>Chess Engine</h1>
+                    <h2>2024</h2>
+                    <p>The classical Chess game including a chess engine that implements various evaluation
+                        and optimization algorithms.</p>
+                    <button onclick="openProjectOverlay('chess-engine')">Read More</button>
+            </div>
+            <div id="chess-engine" class="project-overlay">
+                <div class="overlay-content">
+                    <button class="close-overlay" onclick="closeProjectOverlay('chess-engine')">&times;</button>
+                    <h2>Chess Engine</h2>
+                    <div class="project-details">
+                        <section>
+                            <h3>Project Overview</h3>
+                            <p>A chess game with an optimized minimax evaluation engine.</p>
+                        </section>
+                        <section>
+                            <h3>Impetus</h3>
+                            <p>As one of my beginning projects, I learned with the help of tutorials how
+                                to implement an object-oriented style engine that plays against you!</p>
+                        </section>
+                        <section>
+                            <h3>Skills & Technologies</h3>
+                            <ul>
+                                <li>Implemented Negamax, a special case of Minimax</li>
+                                <li>Optimized evaluation using alpha-beta pruning and move ordering heuristics</li>
+                                <li>GUI interface using PyGame</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h1>Iurii Chmykhun <button id="darkModeToggle" class="fa fa-moon-o" aria-label="Toggle dark mode"></button></h1>
+        <nav>
+            <ul>
+                <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/iuriic"> LinkedIn</a></li>
+                <li><a class="fa fa-github" href="https://github.com/blurryiurii"> Github</a></li>
+                <li><a class="fa fa-instagram" href="https://www.instagram.com/blurryiurii/"> Instagram</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
