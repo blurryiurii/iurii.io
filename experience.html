@@ -7,8 +7,8 @@
     <meta name="author" content="Iurii Chmykhun">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main-mini.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script defer src="scripts/script.js"></script>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'">
+    <script async src="scripts/script.js"></script>
     <title>Iurii Chmykhun | Experience</title>
 </head>
 <body>
@@ -82,7 +82,7 @@
                 <ul>
                     <li>GPA: 4.402 (weighted)</li>
                     <li>Honors graduate</li>
-                    <li><a href="https://www.nationalhonorsociety.org/">National Honors Society</a> member</li>
+                    <li><a href="https://www.nationalhonorsociety.org/" target="_blank">National Honors Society</a> member</li>
                 </ul>
             </div>
         </div>
@@ -104,7 +104,7 @@
                 <h3>Discussions of Math Theory and Applications</h3>
                 <ul>
                     <li>Topics include: Cryptography, algorithms, theorems</li>
-                    <li>Solving <a href="https://projecteuler.net/">Project Euler</a> problems</li>
+                    <li>Solving <a href="https://projecteuler.net/" target="_blank">Project Euler</a> problems</li>
                 </ul>
             </div>
         </div>
@@ -113,11 +113,57 @@
         <h1>Iurii Chmykhun <button id="darkModeToggle" class="fa fa-moon-o" aria-label="Toggle dark mode"></button></h1>
         <nav>
             <ul>
-                <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/iuriic"> LinkedIn</a></li>
-                <li><a class="fa fa-github" href="https://github.com/blurryiurii"> Github</a></li>
-                <li><a class="fa fa-instagram" href="https://www.instagram.com/blurryiurii/"> Instagram</a></li>
+                <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/iuriic" target="_blank"> LinkedIn</a></li>
+                <li><a class="fa fa-github" href="https://github.com/blurryiurii" target="_blank"> Github</a></li>
+                <li><a class="fa fa-instagram" href="https://www.instagram.com/blurryiurii/" target="_blank"> Instagram</a></li>
             </ul>
         </nav>
     </footer>
+    <script>
+        // Dark Mode!
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        // Check for saved dark mode preference
+        if (localStorage.getItem('darkMode') !== null) {
+        // User set a theme
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.add('dark-mode');
+            darkModeToggle.classList.remove('fa-moon-o');
+            darkModeToggle.classList.add('fa-sun-o');
+        } else {
+            body.classList.remove('dark-mode');
+            darkModeToggle.classList.remove('fa-sun-o');
+            darkModeToggle.classList.add('fa-moon-o');
+        }
+        } else {
+        // No overwritten theme
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            body.classList.add('dark-mode');
+            darkModeToggle.classList.remove('fa-moon-o');
+            darkModeToggle.classList.add('fa-sun-o');
+        } else {
+            body.classList.remove('dark-mode');
+            darkModeToggle.classList.remove('fa-sun-o');
+            darkModeToggle.classList.add('fa-moon-o');
+        }
+        }
+
+
+        darkModeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        
+        // Toggle icon
+        darkModeToggle.classList.toggle('fa-moon-o');
+        darkModeToggle.classList.toggle('fa-sun-o');
+        
+        // Save preference
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            localStorage.setItem('darkMode', 'disabled');
+        }
+        });
+    </script>
 </body>
 </html>
