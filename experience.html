@@ -9,51 +9,6 @@
     <link rel="stylesheet" href="styles/main-mini.css">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'">
     <script async src="scripts/script.js"></script>
-    <script>
-        // Dark Mode!
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        const body = document.body;
-
-        // Check for saved dark mode preference
-        if (localStorage.getItem('darkMode') !== null) {
-        // User set a theme
-        if (localStorage.getItem('darkMode') === 'enabled') {
-            body.classList.add('dark-mode');
-            darkModeToggle.classList.remove('fa-moon-o');
-            darkModeToggle.classList.add('fa-sun-o');
-        } else {
-            body.classList.remove('dark-mode');
-            darkModeToggle.classList.remove('fa-sun-o');
-            darkModeToggle.classList.add('fa-moon-o');
-        }
-        } else {
-        // No overwritten theme
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            body.classList.add('dark-mode');
-            darkModeToggle.classList.remove('fa-moon-o');
-            darkModeToggle.classList.add('fa-sun-o');
-        } else {
-            body.classList.remove('dark-mode');
-            darkModeToggle.classList.remove('fa-sun-o');
-            darkModeToggle.classList.add('fa-moon-o');
-        }
-        }
-
-        darkModeToggle.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
-        
-        // Toggle icon
-        darkModeToggle.classList.toggle('fa-moon-o');
-        darkModeToggle.classList.toggle('fa-sun-o');
-        
-        // Save preference
-        if (body.classList.contains('dark-mode')) {
-            localStorage.setItem('darkMode', 'enabled');
-        } else {
-            localStorage.setItem('darkMode', 'disabled');
-        }
-        });
-    </script>
     <title>Iurii Chmykhun | Experience</title>
 </head>
 <body>
@@ -164,5 +119,50 @@
             </ul>
         </nav>
     </footer>
+    <script>
+        // Dark Mode!
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        // Check for saved dark mode preference
+        if (localStorage.getItem('darkMode') !== null) {
+        // User set a theme
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.add('dark-mode');
+            darkModeToggle.classList.remove('fa-moon-o');
+            darkModeToggle.classList.add('fa-sun-o');
+        } else {
+            body.classList.remove('dark-mode');
+            darkModeToggle.classList.remove('fa-sun-o');
+            darkModeToggle.classList.add('fa-moon-o');
+        }
+        } else {
+        // No overwritten theme
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            body.classList.add('dark-mode');
+            darkModeToggle.classList.remove('fa-moon-o');
+            darkModeToggle.classList.add('fa-sun-o');
+        } else {
+            body.classList.remove('dark-mode');
+            darkModeToggle.classList.remove('fa-sun-o');
+            darkModeToggle.classList.add('fa-moon-o');
+        }
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        
+        // Toggle icon
+        darkModeToggle.classList.toggle('fa-moon-o');
+        darkModeToggle.classList.toggle('fa-sun-o');
+        
+        // Save preference
+        if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            localStorage.setItem('darkMode', 'disabled');
+        }
+        });
+    </script>
 </body>
 </html>
