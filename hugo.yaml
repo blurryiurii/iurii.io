@@ -204,15 +204,8 @@ params:
           - Update database information and scripts to ensure accuracy and usability
           - Automate repetitive processes, track data, present findings using Excel, Power BI, Teams
 
-      - job: "Sandwich Artist & Cashier"
-        company: "Capriottis Sandwich Shop"
-        companyUrl: "https://capriottis.com/location/s-marion-road-1742411"
-        date: "Oct 2022 - Aug 2023"
-        content: |-
-          - Serve hot/cold sandwiches, casher at counter, deliver caring customer service
-
       - job: "Business Intelligence Developer Intern"
-        company: "Agtegra"
+        company: "Agtegra Cooperative"
         companyUrl: "https://www.agtegra.com/"
         date: "May 2025 - July 2025"
         # featuredLink:
@@ -223,6 +216,13 @@ params:
           - Store and analyze business data and build Power BI reports to drive informed company decisions
           - Build automated workflows with Apache Airflow to monitor ERP integration success
           - Collaboratively develop end-user applications using Python with PyQt6
+
+      - job: "Sandwich Artist & Cashier"
+        company: "Capriottis Sandwich Shop"
+        companyUrl: "https://capriottis.com/location/s-marion-road-1742411"
+        date: "Oct 2022 - Aug 2023"
+        content: |-
+          - Serve hot/cold sandwiches, casher at counter, deliver caring customer service
 
   education:
     enable: true
