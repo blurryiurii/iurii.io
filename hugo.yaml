@@ -275,7 +275,7 @@ params:
     items:
       - title: Prime Grid Labeling Algorithm
         content: Generation of an n * m matrix with values 1...nm such that all orthogonal neighbors are coprime.
-        image: /images/projects/prime-grid.webp
+        image: /images/projects/prime-grid.png
         featured:
           name: Source
           link: https://github.com/GanschowJosh/PrimeGridLabeling
@@ -291,7 +291,7 @@ params:
 
       - title: iurii.io
         content: This website! An interactive portfolio of my personal and professional development.
-        image: /images/projects/htmlcssjs.webp
+        image: /images/projects/htmlcssjs.png
         featured:
           name: Source
           link: https://github.com/blurryiurii/iurii.io
@@ -319,7 +319,7 @@ params:
 
       - title: Sorting Visualizer
         content: A visualizer of the popular sorting algorithm "Bubble Sort"
-        image: /images/projects/sorting.webp
+        image: /images/projects/sorting.png
         featured:
           name: View in action!
           link: https://sort.iurii.io
