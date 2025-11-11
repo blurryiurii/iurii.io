@@ -233,7 +233,7 @@ params:
         school:
           name: "Dakota State University - Madison, SD"
           url: "https://dsu.edu"
-        date: "Expected Master's Graduation Spring 2026"
+        date: "Expected Master's Graduation Fall 2026"
         GPA: "3.8"
         content: |-
             - CTF Club: Lead and Present on cybersecurity puzzles

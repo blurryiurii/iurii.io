@@ -1,5 +1,5 @@
 ---
-title: "A Layman's Guide To Computer Shortcuts"
+title: "Shortcuts"
 date: 2025-10-16T10:00:00-05:00
 draft: false
 author: "Iurii Chmykhun"
@@ -8,7 +8,8 @@ tags:
   - Keyboard
 # image: /images/post.jpg
 description: "How you can use keyboard shortcuts to speed up your day-to-day computing"
-toc: 
+toc: true
+summary: "How you can use keyboard shortcuts to speed up your day-to-day computing"
 ---
 
 # Why shortcuts?
@@ -16,7 +17,7 @@ Typing on Keyboard is fast. Mouse slow. Need I say more?
 
 These shortcuts are mostly universal and default, so they should apply to stuff you're already doing.
 
-# The Essential Computers
+# The Essentials
 ## The "Ctrl" alphabet
 *Work in just about all situations*
 
