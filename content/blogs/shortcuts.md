@@ -1,7 +1,7 @@
 ---
 title: "A Layman's Guide To Computer Shortcuts"
 date: 2025-10-16T10:00:00-05:00
-draft: true
+draft: false
 author: "Iurii Chmykhun"
 tags:
   - OS
