@@ -1,6 +1,6 @@
 ---
 title: "Shortcuts"
-date: 2025-10-16T10:00:00-05:00
+date: 2025-11-11T10:00:00-05:00
 draft: false
 author: "Iurii Chmykhun"
 tags:
