@@ -51,7 +51,7 @@ Menus:
 
 params:
   title: "Iurii Chmykhun"
-  description: Iurii Chmykhun's website.
+  description: Iurii Chmykhun's website & blog!
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
   favicon_sizes:
