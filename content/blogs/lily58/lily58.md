@@ -1,7 +1,7 @@
 ---
-title: "Custom Lily58 Keyboard Build - An Alternative To Traditional Typing"
+title: "Lily58 Keyboard Build - An Alternative To Traditional Typing"
 date: 2026-05-04T00:00:00-05:00
-draft: true
+draft: false
 author: Iurii Chmykhun
 tags:
   - Keyboard
@@ -12,16 +12,17 @@ summary: "Building a custom-layout keyboard in search of novelty, minimalism, an
 ---
 
 # Introduction
-Here is the journey of the Lily58 keyboard I built using a DIY soldering kit. Perhaps, this post will lead you to **debate over your current keyboard choice**, or even **inspire you** to purchase (or build) a more niche keyboard layout!
+Here is my journey of the Lily58 keyboard I built using a DIY soldering kit. Perhaps, this post will lead you to **debate over your current keyboard choice**, or even **inspire you** to purchase (or build) a more niche keyboard layout!
 
 Lily58 is a keyboard layout that's slightly different from the traditional keyboards we're used to; while it retains the standard QWERTY keys, there are differences in design that create a fully-functional keyboard with just 58 keys. It results in less travel, smaller keyboard footprint, better typing ergonomics, and eventually better accuracy/speed.
 
+{{< figure src="/images/lily58/final.jpg" title="Final Build" >}}
 
 # Why
 ## Ergonomics
 The keyboard features an ortholinear layout. Historically, keyboards have had a staggered layout inherited from typewriters to prevent jams, but this layout does not focus on the way in which our fingers sit on the keyboard. It's highly debated, but I now prefer the ortholinear layout since the finger movements are overall more consistent between any needed key press. You can also go with a [sofle](https://keebd.com/en-us/products/sofle-v2-keyboard-kit), [corne](https://github.com/foostan/crkbd), [helix](https://github.com/MakotoKurauchi/helix), etc.
 
-The split nature of the keyboard allows you to leave your shoulders apart, which, according to sources not cited here, is a more natural typing position.
+The split nature of the keyboard allows you to place your shoulders apart, which is a more natural typing position.
 
 ## Intentionality
 A traditional keyboard might have 108 keys, many of which go unused, forgotten, or sit as a novelty trophy (`Scroll Lock`, anyone?). It's the mainstream choice we succumb to because it's ubiquitous. Perhaps trying another layout will lead you to a more compact layout that suits your daily uses better, and you get to say you deliberately chose something that works for you instead of a solution that "just works".
@@ -81,6 +82,9 @@ As of this writing, my spending was, shipping and tax included:
 - and $1-2 in provided ABS material with a provided 3D printer
 - $15 for soldering my first set of microcontrollers upside down, and frying one of them 😊
 
+Here is everything you should need, 3d printing aside:
+{{<figure src="/images/lily58/setup.jpg" title="Mise en place">}}
+
 ...coming to a total of about $130.
 
 ### Assembly/Build
@@ -90,6 +94,9 @@ In order to not reinvent the wheel, the guide I used to build the keyboard is pr
 The 3D print files I used are:
 - https://www.thingiverse.com/thing:4969364 (switch holes)
 - https://www.thingiverse.com/thing:4601644 (tentable case)
+
+{{<figure src="/images/lily58/3d-printing.jpg" title="3D Printing Process">}}
+
 
 My tips coming from experience!
 - Learn the soldering technique beforehand. It'll speed the process up
@@ -101,12 +108,15 @@ The basic steps above may seem obvious, though taking care of the simple things 
 
 For flashing the keyboard, I used [QMK](https://docs.qmk.fm/newbs_flashing), which has a great guide on steps to flash your controllers after your assembly.
 
-# Experience
+{{<figure src="/images/lily58/initial.jpg" title="Initial build of the keyboard">}}
+
+
+# The Experience
 ## Speed
 
 On [monkeytype], I've typed 100-110 words per minute on a traditional keyboard. In the few days of learning the slightly new layout, I went from an initial 20WPM to about 50WPM. With a few weeks of practice, I anticipate to return to full proficiency as earlier.
 
-## Learning.
+## Learning
 I found [keybr](https://www.keybr.com/) as a very useful tool to learn a few keys at a time, raising my speed by 30-40WPM in the first few days. Prioritizing accuracy over WPM certainly helped me the most here! It's also worth mentioning that I find myself using the correct home-row fingers much more, instead of cheating and deviating from the ideal hand position.
 
 ## Style Points
@@ -118,3 +128,6 @@ I feel it's too early to call for sure, but my shoulders definitely feel more "f
 # Conclusion
 This build was certainly educational in terms of soldering and 3D printing. I started as a complete newbie, and while I'd still call myself that in both, the familiarity I picked up was certainly valuable, and I got a custom keyboard as a result. Give the linked articles a read and consider an alternate layout for yourself!
 
+
+{{<figure src="/images/lily58/left.jpg" title="Left Side">}}
+{{<figure src="/images/lily58/right.jpg" title="Right Side">}}
