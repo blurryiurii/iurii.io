@@ -32,9 +32,6 @@ You might love the lily58 layout, or you might question my sanity for it; regard
 
 You may find yourself considering layouts with a small touchpad near the typing area, wrist rests, and other niceties.
 
-## Why not?
-For some, the learning curve can feel too steep, and some may be only looking for the result, not the process of building. Custom/niche builds are also more pricey than traditional/mainstream keyboards, as they are less mass-produced.
-
 ## Sizing
 The Lily58 layout is aptly named, proposing a 58-key layout. Coming from a full-size keyboard, we lose the NumPad, the F-row/media keys, some editing keys, and even the beloved arrow keys.
 
@@ -45,6 +42,9 @@ Layers, layers.
 We've already gotten used to them without knowing! Just as the `Shift` key gives us a layer for some basic ASCII symbols (`!@#$%^&*()` etc.), we can move the F-row, media keys, arrows, and any other key to "upper" and "lower" layers. This allows a huge number of possible layouts, yet leaves room to be overwhelmed with choices.
 
 At the end of the day, it ends up being a more compact keyboard your desk.
+
+# Why not?
+For some, the learning curve can feel too steep, and some may be only looking for the result, not the process of building. Custom/niche builds are also more pricey than traditional/mainstream keyboards, as they are less mass-produced.
 
 # How
 There are two ways of acquiring these precision-made instruments: prebuilt, or handmade/DIY.
