@@ -1,0 +1,11 @@
+body.dark #single .page-content a,
+body.dark #single .page-content a:link,
+body.dark #single .page-content a:visited {
+  color: #7cc7ff !important;
+}
+
+body.dark #single .page-content a:hover,
+body.dark #single .page-content a:focus,
+body.dark #single .page-content a:active {
+  color: #a8dcff !important;
+}
