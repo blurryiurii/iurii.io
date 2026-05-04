@@ -1,7 +1,7 @@
 # https://github.com/gurusabarish/hugo-profile
 
 baseURL: "https://iurii.io/"
-languageCode: "en-us"
+languageCode: "en"
 title: "Iurii Chmykhun"
 theme: hugo-profile
 
@@ -52,7 +52,6 @@ Menus:
 params:
   title: "Iurii Chmykhun"
   description: Iurii Chmykhun's website & blog!
-  customCSS: true
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
   favicon_sizes:
